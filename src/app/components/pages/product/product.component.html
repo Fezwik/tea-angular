@@ -1,0 +1,13 @@
+<div class="container d-flex flex-column h-100">
+  <div class="w-25 align-self-center">
+    <img src="{{product.image}}" class="card-img-top" alt="Tea image">
+  </div>
+  <div class="card-body text-center w-50 align-self-center">
+    <h5 class="card-title fw-bold">{{ product.title }}</h5>
+    <p class="card-text">{{ product.description }}</p>
+    <div class="d-flex flex-row justify-content-between align-items-baseline">
+      <a class="btn btn-primary px-5" routerLink="/order" [queryParams]="{product: product.title}">Купить</a>
+      <p>{{ product.price }} руб.</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="mt-5 mb-5">
+    <div>
+      <img class="w-100" src="./assets/images/slider_img1.png" alt="image_1">
+    </div>
+  </div>
+  <div class="questions">
+    <h3 class="fw-bold mb-5 text-center fs-2">Ответы на часто задаваемые вопросы</h3>
+    <div class="w-75 mx-auto">
+      <mat-expansion-panel class="rounded-3 bg-white text-white mb-3">
+        <mat-expansion-panel-header class="bg-primary rounded-bottom-0">
+          <mat-panel-title>Собираете ли вы подарочные боксы?</mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="border border-0 text-black mt-3 mb-0">Да, у нас есть такая услуга. Мы можем собрать подарочный бокс на любой вкус, объем и стоимость!</p>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel class="rounded-3 bg-white text-white mb-3">
+        <mat-expansion-panel-header class="bg-primary rounded-bottom-0">
+          <mat-panel-title>Сколько у вас разновидностей чая?</mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="border border-0 text-black mt-3 mb-0">На данный момент у нас 6 разновидностей чая, но мы постоянно совершенствуемся и пополняем наш
+          ассортимент</p>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel class="rounded-3 bg-white text-white mb-3">
+        <mat-expansion-panel-header class="bg-primary rounded-bottom-0">
+          <mat-panel-title>В какой срок осуществляется доставка?</mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="border border-0 text-black mt-3 mb-0">Время доставки не превышает 3-х часов, если мы находимся в Вашем городе, либо же срок доставки
+          зависит от
+          транспортной компании</p>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel class="rounded-3 bg-white text-white mb-3">
+        <mat-expansion-panel-header class="bg-primary rounded-bottom-0">
+          <mat-panel-title>У вас обновляется ассортимент?</mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="border border-0 text-black mt-3 mb-0">Да, мы стараемся не стоять на месте и постоянно ищем что-то новое, чем могли бы удивить наших
+          покупателей</p>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel class="rounded-3 bg-white text-white mb-3">
+        <mat-expansion-panel-header class="bg-primary rounded-bottom-0">
+          <mat-panel-title>Какого объема у вас пачки чая?</mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="border border-0 text-black mt-3 mb-0">Вы можете заказать чай в упаковке объемом 100г, 200г, 500г и для особых любителей чая- 1000г</p>
+      </mat-expansion-panel>
+    </div>
+  </div>
+  <div class="popup w-25 h-25 text-center align-content-center rounded-2" *ngIf="popup">
+      <div class="popup-text fs-5 pb-3">
+        <p>Посмотрите наши чайные коллекции</p>
+      </div>
+      <div class="popup-button btn btn-primary">
+        <a [routerLink]="'catalog'" class="text-black text-decoration-none">Смотреть</a>
+      </div>
+  </div>
+</div>

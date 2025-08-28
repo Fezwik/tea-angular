@@ -1,1 +1,52 @@
-/* You can add global styles to this file, and also import other style files */
+.slick-arrow {
+  z-index: 10;
+}
+
+.slick-next:before {
+  content: url("/assets/images/arrow.png");
+  left: -50px;
+  top: -10px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+
+}
+
+.slick-prev:before {
+  content: url("/assets/images/arrow-left.png");
+  left: 30px;
+  top: -10px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+
+.ui-accordion-header-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 22px;
+}
+
+
+//.defaultIcon {
+//  background-image: url("/assets/images/accordion-arrows/up.png");
+//  transition: all .3s linear;
+//}
+//
+//.selectedIcon {
+//  background-image: url("/assets/images/accordion-arrows/up.png");
+//  transform: rotate(180deg) translateY(-5px);
+//  transition: all .3s linear;
+//}
+//
+//.ui-state-hover .ui-icon, .ui-state-focus .ui-icon, .ui-button:hover .ui-icon, .ui-button:focus .ui-icon {
+//  background-image: url("/assets/images/accordion-arrows/up.png");
+//}
+//
+//.ui-state-active .ui-icon, .ui-button:active .ui-icon {
+//  background-image: url("/assets/images/accordion-arrows/up.png");
+//}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
