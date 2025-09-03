@@ -3,7 +3,7 @@ import {Subscription} from "rxjs";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {ProductService} from "../../../services/product-service.service";
 import {ActivatedRoute, Router} from "@angular/router";
-import {validation} from "../../../directives/validation.directive";
+import {validation} from "../../../shared/directives/validation.directive";
 
 @Component({
   selector: 'app-order',

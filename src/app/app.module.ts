@@ -3,41 +3,39 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderNavigationComponent } from './components/common/header-navigation/header-navigation.component';
-import { FooterRightsComponent } from './components/common/footer-rights/footer-rights.component';
-import { MainComponent } from './components/pages/main/main.component';
-import { CatalogComponent } from './components/pages/catalog/catalog.component';
+import { HeaderNavigationComponent } from './shared/header-navigation/header-navigation.component';
+import { FooterRightsComponent } from './shared/footer-rights/footer-rights.component';
+import { MainComponent } from './features/main/main/main.component';
+import { CatalogComponent } from './features/products/catalog/catalog.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatExpansionModule} from "@angular/material/expansion";
-import { ProductCardComponent } from './components/pages/catalog/product-card/product-card.component';
-import { OrderComponent } from './components/pages/order/order.component';
-import { ProductComponent } from './components/pages/product/product.component';
-import {HttpClient, HttpClientModule} from "@angular/common/http";
-import { ShortTextPipe } from './pipes/short-text.pipe';
-import { ValidationDirective } from './directives/validation.directive';
+import { ProductCardComponent } from './features/products/catalog/product-card/product-card.component';
+import { OrderComponent } from './features/order/order/order.component';
+import { ProductComponent } from './features/products/product/product.component';
+import {HttpClientModule} from "@angular/common/http";
+import { ShortTextPipe } from './shared/pipes/short-text.pipe';
+import { ValidationDirective } from './shared/directives/validation.directive';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {SharedModule} from "./shared/shared.module";
+import {MainModule} from "./features/main/main.module";
+import {OrderModule} from "./features/order/order.module";
+import {ProductsModule} from "./features/products/products.module";
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderNavigationComponent,
-    FooterRightsComponent,
-    MainComponent,
-    CatalogComponent,
-    ProductCardComponent,
-    OrderComponent,
-    ProductComponent,
-    ShortTextPipe,
-    ValidationDirective
   ],
   imports: [
     BrowserModule,
+    SharedModule,
+    MainModule,
+    OrderModule,
+    ProductsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatExpansionModule,
     HttpClientModule,
-    ReactiveFormsModule,
-    FormsModule
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
